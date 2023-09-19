@@ -83,10 +83,15 @@ public void handleException(Exception e) {
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 ## Como funciona
-La librería tiene dos funciones `Obtener Correos` y `Eliminar Correos` 
-está creada con el objetivo de mostrarle al usuario la cantidad de correos que tiene
-y para después eliminarlos, pero no es necesario obtenerlos, puede crear su lógica sólo 
-para eliminar los correos del servidor.
+La librería tiene dos funciones `obtainsEmail` y `deleteEmails`
+
+Esta librería ha sido desarrollada con el propósito de facilitar la obtención 
+de correos electrónicos y mostrar al usuario la cantidad de mensajes que tiene 
+en las carpetas "Recibidos", "Enviados" y "Eliminados". 
+Además, proporciona la funcionalidad para eliminar dichos correos del servidor.
+Sin embargo, es importante destacar que no es necesario obtener la cantidad de correos antes de eliminarlos del servidor. 
+Puedes utilizar esta librería para implementar tu propia lógica de eliminación de correos sin necesidad de obtener previamente la cantidad. 
+La librería simplemente proporciona una forma conveniente de obtener esa información si lo deseas.
 
 ### Contacto
 
@@ -97,18 +102,17 @@ soporteapplify@gmail.com
 ### License
  
  ```
-    Copyright (C) 2023  Applify
+Copyright (C) 2023  Applify
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-    
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
