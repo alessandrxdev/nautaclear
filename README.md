@@ -45,7 +45,7 @@ En su MainActivity.class agregue
 NautaMail nauta = new NautaMail(this);
 
 // obtener cantidad de correos
-mail.obtainsEmail(email,password,new NautaMail.EmailsCallback() {
+mail.obtainsEmail(email,password,new EmailsCallback() {
     @Override
     public void updateUI(MailCount count) {
     String inbox = count.inboxCount;
@@ -62,7 +62,7 @@ mail.obtainsEmail(email,password,new NautaMail.EmailsCallback() {
  
  
  // eliminar correos 
-mail.deleteEmails(email,password,new NautaMail.EmailsCallback() {
+mail.deleteEmails(email,password,new EmailsCallback() {
     @Override
     public void updateUI(MailCount count) {
     
@@ -82,6 +82,11 @@ public void handleException(Exception e) {
  ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
+## Como funciona
+La librería tiene dos funciones `Obtener Correos` y `Eliminar Correos` 
+está creada con el objetivo de mostrarle al usuario la cantidad de correos que tiene
+y para después eliminarlos, pero no es necesario obtenerlos, puede crear su lógica sólo 
+para eliminar los correos del servidor.
 
 ### Contacto
 
