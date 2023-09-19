@@ -1,7 +1,7 @@
 # NautaClear
 <p align="center">
 
-<img src="./images/logo.png" width="70%">
+<img src="./images/logo.png" width="40%">
 
 Librería para obtener la cantidad de correos en el servidor nauta y eliminarlos.
 
