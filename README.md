@@ -1,10 +1,11 @@
 # NautaClear
 <p align="center">
 
-<img src="./images/logo.png" width="100%">
+<img src="./images/logo.png" width="70%">
 
 Librería para obtener la cantidad de correos en el servidor nauta y eliminarlos.
 
+[![](https://jitpack.io/v/applifycu/nautaclear.svg)](https://jitpack.io/#applifycu/nautaclear)
 
 </p>
 
