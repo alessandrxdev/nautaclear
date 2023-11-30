@@ -58,7 +58,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.applifycu"
             artifactId = "nautaclear"
-            version = "1.0.0"
+            version = "1.0.0-alpha2"
 
             afterEvaluate {
                 from(components["release"])
